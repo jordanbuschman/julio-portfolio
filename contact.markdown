@@ -4,18 +4,22 @@ title: Contact
 permalink: /contact/
 ---
 
-<form id="contact-form">
-  <label for="subject">Subject</label><br>
-  <input type="text" name="subject" required><br><br>
+<link rel="stylesheet" href="{{ '/assets/css/contact.css' | relative_url }}">
 
-  <label for="email">Email</label><br>
-  <input type="email" name="email" required><br><br>
+<div class="page-content">
+  <form id="contact-form">
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" required>
 
-  <label for="message">Message</label><br>
-  <textarea name="message" rows="6" required></textarea><br><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" required>
 
-  <input type="submit" value="Send">
-</form>
+    <label for="message">Message</label>
+    <textarea name="message" rows="6" required></textarea>
+
+    <input type="submit" value="Send">
+  </form>
+</div>
 
 <script src="https://www.google.com/recaptcha/api.js?render=6LeF_FcrAAAAAKgzqzmP6gykaXlf5Y4Y_LOi9Bq5"></script>
-<script src="/assets/js/contact.js">
+<script src="{{ '/assets/js/contact.js' | relative_url }}"></script>
