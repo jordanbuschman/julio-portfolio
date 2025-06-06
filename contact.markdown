@@ -17,5 +17,5 @@ permalink: /contact/
   <input type="submit" value="Send">
 </form>
 
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lc1blArAAAAAHngM6OCo8dAbEGpxOX8wgoM_Wkx"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeF_FcrAAAAAKgzqzmP6gykaXlf5Y4Y_LOi9Bq5"></script>
 <script src="/assets/js/contact.js">

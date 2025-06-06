@@ -1,8 +1,10 @@
+const SITE_KEY = '6LeF_FcrAAAAAKgzqzmP6gykaXlf5Y4Y_LOi9Bq5';
+
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    grecaptcha.enterprise.ready(async () => {
-        const token = await grecaptcha.enterprise.execute('6Lc7hlErAAAAANQt85l8stsz4FBU4PY6YAqp8THE', { action: 'LOGIN' });
+    grecaptcha.ready(async () => {
+        const token = await grecaptcha.execute(SITE_KEY, { action: 'LOGIN' });
 
         const form = event.target;
         const formData = new FormData(form);
